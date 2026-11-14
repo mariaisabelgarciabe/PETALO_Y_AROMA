@@ -1,0 +1,79 @@
+
+# ==========================================
+# PÉTALO & AROMA — .gitignore
+# ==========================================
+
+# Variables de entorno (contienen credenciales y configuración local)
+.env
+backend/.env
+*.env.local
+*.env.development
+*.env.production
+
+# Mantener el archivo de ejemplo de configuración
+!backend/.env.example
+
+# Entornos virtuales de Python
+.venv/
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Node / Frontend
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log
+dist/
+build/
+*.log
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Base de datos y respaldos
+*.db
+*.sqlite
+*.sqlite3
+*.bak
+*.mdf
+*.ldf
+
+# Archivos de salida del sistema
+graficas_floristeria/
+registros_floristeria.xlsx
+*.xlsx
+
+# Archivos de pruebas y diagnóstico locales
+backend/test_sql.py
+backend/test_inventario.py
+backend/inspect_tables.py
